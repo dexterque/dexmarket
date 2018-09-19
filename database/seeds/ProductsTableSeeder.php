@@ -21,7 +21,7 @@ class ProductsTableSeeder extends Seeder
             $discount_price = $actual_price - $discount_factor;
 
             DB::table('products')->insert([
-                'title' => 'Product for' . $category[0]->name,
+                'title' => 'Product for ' . $category[0]->name,
                 'image' => 'http://via.placeholder.com/600x400',
                 'category_id' => $category_id,
                 'original_price' => $actual_price,
