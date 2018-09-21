@@ -16,19 +16,19 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
         function hideURLbar(){ window.scrollTo(0,1); } </script>
     <!-- //for-mobile-apps -->
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="{!! asset('css/bootstrap.css') !!}" rel="stylesheet" type="text/css" media="all" />
+    <link href="{!! asset('css/style.css') !!}" rel="stylesheet" type="text/css" media="all" />
     <!-- font-awesome icons -->
-    <link href="css/font-awesome.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="{!! asset('css/font-awesome.css') !!}" rel="stylesheet" type="text/css" media="all" />
     <!-- //font-awesome icons -->
     <!-- js -->
-    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="{!! asset('js/jquery-1.11.1.min.js') !!}"></script>
     <!-- //js -->
     <link href='//fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
     <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
     <!-- start-smoth-scrolling -->
-    <script type="text/javascript" src="js/move-top.js"></script>
-    <script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript" src="{!! asset('js/move-top.js') !!}"></script>
+    <script type="text/javascript" src="{!! asset('js/easing.js') !!}"></script>
     <script type="text/javascript">
         jQuery(document).ready(function($) {
             $(".scroll").click(function(event){
@@ -191,7 +191,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <div class="wthree_banner_bottom_left_grid_sub1">
         <div class="col-md-4 wthree_banner_bottom_left">
             <div class="wthree_banner_bottom_left_grid">
-                <img src="images/4.jpg" alt=" " class="img-responsive" />
+                <img src="{!! asset('images/4.jpg') !!}" alt=" " class="img-responsive" />
                 <div class="wthree_banner_bottom_left_grid_pos">
                     <h4>Discount Offer <span>25%</span></h4>
                 </div>
@@ -199,7 +199,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         </div>
         <div class="col-md-4 wthree_banner_bottom_left">
             <div class="wthree_banner_bottom_left_grid">
-                <img src="images/5.jpg" alt=" " class="img-responsive" />
+                <img src="{!! asset('images/5.jpg') !!}" alt=" " class="img-responsive" />
                 <div class="wthree_banner_btm_pos">
                     <h3>introducing <span>best store</span> for <i>groceries</i></h3>
                 </div>
@@ -207,7 +207,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         </div>
         <div class="col-md-4 wthree_banner_bottom_left">
             <div class="wthree_banner_bottom_left_grid">
-                <img src="images/6.jpg" alt=" " class="img-responsive" />
+                <img src="{!! asset('images/6.jpg') !!}" alt=" " class="img-responsive" />
                 <div class="wthree_banner_btm_pos1">
                     <h3>Save <span>Upto</span> $10</h3>
                 </div>
@@ -222,124 +222,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <div class="container">
         <h3>Hot Offers</h3>
         <div class="agile_top_brands_grids">
-            <div class="col-md-3 top_brand_left">
-                <div class="hover14 column">
-                    <div class="agile_top_brand_left_grid">
-                        <div class="tag"><img src="images/tag.png" alt=" " class="img-responsive" /></div>
-                        <div class="agile_top_brand_left_grid1">
-                            <figure>
-                                <div class="snipcart-item block" >
-                                    <div class="snipcart-thumb">
-                                        <a href="single.html"><img title=" " alt=" " src="images/1.png" /></a>
-                                        <p>fortune sunflower oil</p>
-                                        <h4>$7.99 <span>$10.00</span></h4>
-                                    </div>
-                                    <div class="snipcart-details top_brand_home_details">
-                                        <form action="checkout.html" method="post">
-                                            <fieldset>
-                                                <input type="hidden" name="cmd" value="_cart" />
-                                                <input type="hidden" name="add" value="1" />
-                                                <input type="hidden" name="business" value=" " />
-                                                <input type="hidden" name="item_name" value="Fortune Sunflower Oil" />
-                                                <input type="hidden" name="amount" value="7.99" />
-                                                <input type="hidden" name="discount_amount" value="1.00" />
-                                                <input type="hidden" name="currency_code" value="USD" />
-                                                <input type="hidden" name="return" value=" " />
-                                                <input type="hidden" name="cancel_return" value=" " />
-                                                <input type="submit" name="submit" value="Add to cart" class="button" />
-                                            </fieldset>
-
-                                        </form>
-
-                                    </div>
-                                </div>
-                            </figure>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 top_brand_left">
-                <div class="hover14 column">
-                    <div class="agile_top_brand_left_grid">
-                        <div class="agile_top_brand_left_grid1">
-                            <figure>
-                                <div class="snipcart-item block" >
-                                    <div class="snipcart-thumb">
-                                        <a href="single.html"><img title=" " alt=" " src="images/3.png" /></a>
-                                        <p>basmati rise (5 Kg)</p>
-                                        <h4>$11.99 <span>$15.00</span></h4>
-                                    </div>
-                                    <div class="snipcart-details top_brand_home_details">
-                                        <form action="#" method="post">
-                                            <fieldset>
-                                                <input type="hidden" name="cmd" value="_cart" />
-                                                <input type="hidden" name="add" value="1" />
-                                                <input type="hidden" name="business" value=" " />
-                                                <input type="hidden" name="item_name" value="basmati rise" />
-                                                <input type="hidden" name="amount" value="11.99" />
-                                                <input type="hidden" name="discount_amount" value="1.00" />
-                                                <input type="hidden" name="currency_code" value="USD" />
-                                                <input type="hidden" name="return" value=" " />
-                                                <input type="hidden" name="cancel_return" value=" " />
-                                                <input type="submit" name="submit" value="Add to cart" class="button" />
-                                            </fieldset>
-                                        </form>
-                                    </div>
-                                </div>
-                            </figure>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        @foreach($hot_products as $hot_product)
             <div class="col-md-3 top_brand_left">
                 <div class="hover14 column">
                     <div class="agile_top_brand_left_grid">
                         <div class="agile_top_brand_left_grid_pos">
-                            <img src="images/offer.png" alt=" " class="img-responsive" />
+                            <img src="{!! asset('images/offer.png') !!}" alt=" " class="img-responsive" />
                         </div>
                         <div class="agile_top_brand_left_grid1">
                             <figure>
                                 <div class="snipcart-item block">
                                     <div class="snipcart-thumb">
-                                        <a href="single.html"><img src="images/2.png" alt=" " class="img-responsive" /></a>
-                                        <p>Pepsi soft drink (2 Ltr)</p>
-                                        <h4>$8.00 <span>$10.00</span></h4>
-                                    </div>
-                                    <div class="snipcart-details top_brand_home_details">
-                                        <form action="#" method="post">
-                                            <fieldset>
-                                                <input type="hidden" name="cmd" value="_cart" />
-                                                <input type="hidden" name="add" value="1" />
-                                                <input type="hidden" name="business" value=" " />
-                                                <input type="hidden" name="item_name" value="Pepsi soft drink" />
-                                                <input type="hidden" name="amount" value="8.00" />
-                                                <input type="hidden" name="discount_amount" value="1.00" />
-                                                <input type="hidden" name="currency_code" value="USD" />
-                                                <input type="hidden" name="return" value=" " />
-                                                <input type="hidden" name="cancel_return" value=" " />
-                                                <input type="submit" name="submit" value="Add to cart" class="button" />
-                                            </fieldset>
-                                        </form>
-                                    </div>
-                                </div>
-                            </figure>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 top_brand_left">
-                <div class="hover14 column">
-                    <div class="agile_top_brand_left_grid">
-                        <div class="agile_top_brand_left_grid_pos">
-                            <img src="images/offer.png" alt=" " class="img-responsive" />
-                        </div>
-                        <div class="agile_top_brand_left_grid1">
-                            <figure>
-                                <div class="snipcart-item block">
-                                    <div class="snipcart-thumb">
-                                        <a href="single.html"><img src="images/4.png" alt=" " class="img-responsive" /></a>
-                                        <p>dogs food (4 Kg)</p>
-                                        <h4>$9.00 <span>$11.00</span></h4>
+                                        <a href="single.html"><img src="{!! asset('images/4.png') !!}" alt=" " class="img-responsive" /></a>
+                                        <p>{!! $hot_product->title !!}</p>
+                                        <h4>{!! $hot_product->discount_price !!} <span>{!! $hot_product->original_price !!}</span></h4>
                                     </div>
                                     <div class="snipcart-details top_brand_home_details">
                                         <form action="#" method="post">
@@ -363,6 +259,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     </div>
                 </div>
             </div>
+        @endforeach
             <div class="clearfix"> </div>
         </div>
     </div>
@@ -392,13 +289,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <div class="col-md-9 w3l_fresh_vegetables_grid_right">
                 <div class="col-md-4 w3l_fresh_vegetables_grid">
                     <div class="w3l_fresh_vegetables_grid1">
-                        <img src="images/8.jpg" alt=" " class="img-responsive" />
+                        <img src="{!! asset('images/8.jpg') !!}" alt=" " class="img-responsive" />
                     </div>
                 </div>
                 <div class="col-md-4 w3l_fresh_vegetables_grid">
                     <div class="w3l_fresh_vegetables_grid1">
                         <div class="w3l_fresh_vegetables_grid1_rel">
-                            <img src="images/7.jpg" alt=" " class="img-responsive" />
+                            <img src="{!! asset('images/7.jpg') !!}" alt=" " class="img-responsive" />
                             <div class="w3l_fresh_vegetables_grid1_rel_pos">
                                 <div class="more m1">
                                     <a href="products.html" class="button--saqui button--round-l button--text-thick" data-text="Shop now">Shop now</a>
@@ -407,7 +304,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         </div>
                     </div>
                     <div class="w3l_fresh_vegetables_grid1_bottom">
-                        <img src="images/10.jpg" alt=" " class="img-responsive" />
+                        <img src="{!! asset('images/10.jpg') !!}" alt=" " class="img-responsive" />
                         <div class="w3l_fresh_vegetables_grid1_bottom_pos">
                             <h5>Special Offers</h5>
                         </div>
@@ -415,10 +312,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 </div>
                 <div class="col-md-4 w3l_fresh_vegetables_grid">
                     <div class="w3l_fresh_vegetables_grid1">
-                        <img src="images/9.jpg" alt=" " class="img-responsive" />
+                        <img src="{!! asset('images/9.jpg') !!}" alt=" " class="img-responsive" />
                     </div>
                     <div class="w3l_fresh_vegetables_grid1_bottom">
-                        <img src="images/11.jpg" alt=" " class="img-responsive" />
+                        <img src="{!! asset('images/11.jpg') !!}" alt=" " class="img-responsive" />
                     </div>
                 </div>
                 <div class="clearfix"> </div>
@@ -500,7 +397,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <div class="col-md-3 w3_footer_grid agile_footer_grids_w3_footer">
                 <div class="w3_footer_grid_bottom">
                     <h4>100% secure payments</h4>
-                    <img src="images/card.png" alt=" " class="img-responsive" />
+                    <img src="{!! asset('images/card.png') !!}" alt=" " class="img-responsive" />
                 </div>
             </div>
             <div class="col-md-3 w3_footer_grid agile_footer_grids_w3_footer">
@@ -556,7 +453,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     });
 </script>
 <!-- //here ends scrolling icon -->
-<script src="js/minicart.js"></script>
+<script src="{!! asset('js/minicart.js') !!}"></script>
 <script>
     paypal.minicart.render();
 
