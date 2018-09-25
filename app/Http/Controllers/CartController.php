@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\HotProduct;
 use Illuminate\Http\Request;
 use App\Models\Product;
 use App\Models\Cart;
@@ -14,7 +15,6 @@ class CartController extends Controller
         $session_id = session()->get('_token');
         // get product details by id
         $product = Product::where('id', '=', $product_id)->first();
-
         if (null == $product) {
             abort(404);
         }
@@ -22,7 +22,8 @@ class CartController extends Controller
         if (Cart::where('session_id', '=', $session_id)->exists()) {
             // check whether product exist if yes increase quantity
             $enty = Cart::where(['session_id' => $session_id,
-                'product_id' => $product_id]->increment('qty', 1));
+                'product_id' => $product_id->increment('qty', 1)]);
+
             if (!$enty) {
                 Cart::create([
                     'session_id' => $session_id,
@@ -49,8 +50,11 @@ class CartController extends Controller
     public function show() {
         $session_id = session()->get( '_token' );
         $entries       = Cart::where( 'session_id', $session_id )->get();
+        $hot_products = HotProduct::join('products', 'products.id', '=', 'product_id')->get();
+
         return view( 'cart/show' )
             ->with( 'entries', $entries )
-            ->with( 'session_id', $session_id );
+            ->with( 'session_id', $session_id )
+            ->with('hot_products', $hot_products);
     }
 }
