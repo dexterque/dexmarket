@@ -16,6 +16,7 @@ class ProductController extends Controller
     public function index()
     {
         //
+        echo 2;
     }
 
     /**

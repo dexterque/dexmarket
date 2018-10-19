@@ -20,7 +20,6 @@ define('LARAVEL_START', microtime(true));
 | loading any of our classes later on. It feels great to relax.
 |
 */
-
 require __DIR__.'/../vendor/autoload.php';
 
 /*
@@ -50,6 +49,21 @@ $app = require_once __DIR__.'/../bootstrap/app.php';
 */
 
 $kernel = $app->make(Illuminate\Contracts\Http\Kernel::class);
+
+use Illuminate\Database\Eloquent\Model;
+
+class User extends Model{
+    protected $table = 'users';
+}
+
+$user = new User();
+$user->name = 'xiaozhang';
+
+echo $user->name;
+
+var_dump(isset($user->name));
+
+unset($user->name);
 
 $response = $kernel->handle(
     $request = Illuminate\Http\Request::capture()

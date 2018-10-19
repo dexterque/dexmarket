@@ -21,10 +21,10 @@ class CartController extends Controller
 
         if (Cart::where('session_id', '=', $session_id)->exists()) {
             // check whether product exist if yes increase quantity
-            $enty = Cart::where(['session_id' => $session_id,
+            $entry = Cart::where(['session_id' => $session_id,
                 'product_id' => $product_id->increment('qty', 1)]);
 
-            if (!$enty) {
+            if (!$entry) {
                 Cart::create([
                     'session_id' => $session_id,
                     'product_id' => $product_id,
